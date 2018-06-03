@@ -37,6 +37,56 @@ public class Bank {
          System.out.println("Enter The Name : ");
          name=in.nextLine();
      }
+    ------------------------------------------------------------------------------------------------------------------------------------
+        
+package day4activity;
+import java.util.Scanner;
+public class Bank {
+    
+   String name;
+   int id;
+   Scanner in = new Scanner(System.in);
+  
+  Bank()
+  {
+      this.name="City Bank";
+      this.id=1012;
+  
+  }
+   
+   void setName(/*String s*/)
+   {
+     System.out.println("Name: ");
+     name= in.nextLine();
+       //name = s;
+   }
+   
+   String getName()
+   {
+      return name;
+   }
+    
+  void setId()
+  {
+      System.out.println("ID :");
+      id=Integer.parseInt(in.nextLine());
+  
+  }
+  
+  int getId()
+  {
+      return id;
+  }
+   
+   @Override
+   public String toString()
+   {
+       String data = "Name of the Bank : "+ name + "\nID :" +id;
+       return data;
+   
+   }
+}
+
     
      String getName()
     {
