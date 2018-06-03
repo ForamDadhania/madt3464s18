@@ -52,3 +52,30 @@ public class Day4activity {
     }
     
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------
+   package day4activity;
+
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author Foram
+ */
+public class Day4Activity {
+    
+
+   
+    public static void main(String[] args) {
+        
+         Bank b1 = new Bank();
+         System.out.println(b1.toString());
+         
+         BankAccount ba = new BankAccount();
+         System.out.println(ba.toString());
+         
+         OverdraftAccount actions1 = new OverdraftAccount();
+         actions1.actions();
+    }
+}
