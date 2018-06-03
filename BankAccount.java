@@ -48,6 +48,36 @@ BankAccount(String actNo,String ownerName,int balAmt,String name,int id)
  
 
 }
+-------------------------------------------------------------------------------------------------------------------------------------
+
+package day4activity;
+
+
+public class BankAccount extends Bank{
+    
+  String oName;
+  int actNo;
+  int balAmt;
+  
+BankAccount()
+{
+   super();
+    this.oName = "Foram";
+    this.actNo = 1603;
+    this.balAmt=2000;
+}
+
+@Override
+public String toString()
+{
+    String details = super.toString();
+    String data = "Name: " + this.oName+ "\nAccount No : " 
+            + this.actNo + "\nBalance amout : " + this.balAmt;
+    return data;
+}
+    
+}
+
 
 
 
